@@ -1,0 +1,48 @@
+body{
+  background-color: rgb(5, 5, 65);
+  padding: 55px;
+ 
+}
+main{
+  background-color:#F5F5F5;
+  height: 400px;
+  max-width: 800px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.main-page{
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  row-gap: 35px;
+  justify-content: center;
+  text-align: center;
+  
+}
+.roll,.new-game{
+  background-color:rgb(96, 96, 241);
+  border: none;
+  width: 100px;
+  height: 40px;
+position: relative;
+ left:10rem;
+}
+
+@media screen and (max-width: 500px) {
+  .main,
+  .main-page{
+    width: 60%;
+    gap: 9px;
+  }
+  .roll{
+    left:50%;
+    top: 50%;
+  }
+  .main-page{
+    grid-template:auto auto / repeat(2, 1fr);
+  }
+ 
+}
